@@ -36,7 +36,7 @@ The terminal should output the result of running the `main` function in `app/Mai
 
 ### Working on a package
 
-Before starting work on a new package, it's worth ensuring the Haskell language server is up and running. Without it, you won't see any syntax highlighting, which is extremely useful for writing and inspecting Haskell code.
+Before starting work on a new package, it's worth ensuring the Haskell Language Server is up and running. Without it, you won't see any syntax highlighting, which is extremely useful for writing and inspecting Haskell code.
 
 To do this:
 
