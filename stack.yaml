@@ -1,0 +1,5 @@
+resolver:
+  url: https://raw.githubusercontent.com/commercialhaskell/stackage-snapshots/master/lts/19/17.yaml
+packages:
+  - packages/chapters/01
+system-ghc: true
