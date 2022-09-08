@@ -19,6 +19,13 @@ superdupersum :: [Integer] -> Integer
 superdupersum [] = 0
 superdupersum (first:restoflist) = first + supersum restoflist
 
+qsort :: Ord x => [x] -> [x]
+qsort [] = []
+qsort (x:xs) = qsort smol ++ [x] ++ qsort beeg
+    where
+        smol = [a | a <- xs, a <= x]
+        beeg = [a | a <- xs, a > x]
+
 someFunc :: IO ()
 someFunc = do
     putStr "double 4: "
@@ -33,3 +40,5 @@ someFunc = do
     print (supersum [1..5])
     putStr "superdupersum [1..5]: "
     print  (superdupersum [1..5])
+    putStr "qsort [1,5,2,67,23]: "
+    print (qsort [1,5,2,67,23 :: Integer])
